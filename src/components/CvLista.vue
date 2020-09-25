@@ -34,10 +34,12 @@
               </thead>
               <tbody>
                 <tr>
-                  <td v-for="student in students" :key="student.id">
+                  <td
+                    v-for="student in _embedded.studentList"
+                    :key="student.id"
+                  >
                     {{ student.firstName }}
                     {{ students }}
-                    <!-- students ger en aray med gött gött-->
                   </td>
                   <td>
                     <!-- <a href="#">Öppna</a> -->
