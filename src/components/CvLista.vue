@@ -35,11 +35,10 @@
               <tbody>
                 <tr>
                   <td
-                    v-for="student in _embedded.studentList"
+                    v-for="student in students._embedded.studentList"
                     :key="student.id"
                   >
                     {{ student.firstName }}
-                    {{ students }}
                   </td>
                   <td>
                     <!-- <a href="#">Öppna</a> -->
@@ -73,7 +72,7 @@ export default {
       fetch("http://localhost:8080/api/v1/students")
         .then((response) => response.json())
         .then((result) => {
-          console.log(result);
+          console.log(result._embedded.studentList);
           this.students = result;
         });
     },
