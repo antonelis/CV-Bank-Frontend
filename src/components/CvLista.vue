@@ -36,6 +36,8 @@
                 <tr>
                   <td v-for="student in students" :key="student.id">
                     {{ student.firstName }}
+                    {{ students }}
+                    <!-- students ger en aray med gött gött-->
                   </td>
                   <td>
                     <!-- <a href="#">Öppna</a> -->
