@@ -39,11 +39,11 @@
                   :key="student.id"
                 >
                   <td v-if="student.education === 'Java'">
-                    {{ student.firstName }}
+                    {{ student.firstName }} {{student.lastName }}
                   </td>
-                  <!-- <td>
+                   <td v-if="student.education === 'Java'">
                     <a href="../assets/cv.pdf">Öppna</a>
-                  </td> -->
+                  </td>
                 </tr>
               </tbody>
             </table>
@@ -86,7 +86,7 @@
                   :key="student.id"
                 >
                   <td v-if="student.education === 'Web'">
-                    {{ student.firstName }}
+                    {{ student.firstName }} {{student.lastName }}
                   </td>
                   <!-- <td>
                     <a href="../assets/cv.pdf">Öppna</a>
@@ -133,7 +133,7 @@
                   :key="student.id"
                 >
                   <td v-if="student.education === 'App'">
-                    {{ student.firstName }}
+                    {{ student.firstName }} {{student.lastName }}
                   </td>
                   <!-- <td>
                     <a href="../assets/cv.pdf">Öppna</a>
@@ -180,7 +180,7 @@
                   :key="student.id"
                 >
                   <td v-if="student.education === 'Mjukvarutestare'">
-                    {{ student.firstName }}
+                    {{ student.firstName }} {{student.lastName }}
                   </td>
                   <!-- <td>
                     <a href="../assets/cv.pdf">Öppna</a>
@@ -227,7 +227,7 @@
                   :key="student.id"
                 >
                   <td v-if="student.education === '.Net'">
-                    {{ student.firstName }}
+                    {{ student.firstName }} {{student.lastName }}
                   </td>
                   <!-- <td>
                     <a href="../assets/cv.pdf">Öppna</a>
@@ -274,7 +274,7 @@
                   :key="student.id"
                 >
                   <td v-if="student.education === 'JavaScript'">
-                    {{ student.firstName }}
+                    {{ student.firstName }} {{student.lastName }}
                   </td>
                   <!-- <td>
                     <a href="../assets/cv.pdf">Öppna</a>
@@ -321,7 +321,7 @@
                   :key="student.id"
                 >
                   <td v-if="student.education === 'Frontend'">
-                    {{ student.firstName }}
+                    {{ student.firstName }} {{student.lastName }}
                   </td>
                   <!-- <td>
                     <a href="../assets/cv.pdf">Öppna</a>
@@ -368,7 +368,7 @@
                   :key="student.id"
                 >
                   <td v-if="student.education === 'It-projekt'">
-                    {{ student.firstName }}
+                    {{ student.firstName }} {{student.lastName }}
                   </td>
                   <!-- <td>
                     <a href="../assets/cv.pdf">Öppna</a>
@@ -415,7 +415,7 @@
                   :key="student.id"
                 >
                   <td v-if="student.education === 'Ux'">
-                    {{ student.firstName }}
+                    {{ student.firstName }} {{student.lastName }}
                   </td>
                   <!-- <td>
                     <a href="../assets/cv.pdf">Öppna</a>
