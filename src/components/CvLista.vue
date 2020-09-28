@@ -7,6 +7,8 @@
         <div class="card-header" id="headingOne">
           <h2 class="mb-0">
             <button
+              v-for="student in students._embedded.studentList"
+              :key="student.id"
               class="btn btn-block text-left"
               type="button"
               data-toggle="collapse"
@@ -14,7 +16,7 @@
               aria-expanded="true"
               aria-controls="collapseOne"
             >
-              <h5>Java</h5>
+              <h5>{{ student.education }}</h5>
             </button>
           </h2>
         </div>
