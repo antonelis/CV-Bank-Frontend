@@ -37,7 +37,7 @@
                   v-for="student in students._embedded.studentList"
                   :key="student.id"
                 >
-                  <td>
+                  <td v-if="student.education === 'Java'">
                     {{ student.firstName }}
                   </td>
                   <!-- <td>
@@ -83,7 +83,7 @@
                   v-for="student in students._embedded.studentList"
                   :key="student.id"
                 >
-                  <td v-if="student.education === 'web'">
+                  <td v-if="student.education === 'Web'">
                     {{ student.firstName }}
                   </td>
                   <!-- <td>
