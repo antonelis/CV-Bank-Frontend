@@ -33,11 +33,11 @@
                 </tr>
               </thead>
               <tbody>
-                <tr>
-                  <td
-                    v-for="student in students._embedded.studentList"
-                    :key="student.id"
-                  >
+                <tr
+                  v-for="student in students._embedded.studentList"
+                  :key="student.id"
+                >
+                  <td>
                     {{ student.firstName }}
                   </td>
                   <td>
