@@ -40,9 +40,9 @@
                   <td>
                     {{ student.firstName }}
                   </td>
-                  <td>
-                    <a href="@/assets/cv.pdf">Öppna</a>
-                  </td>
+                  <!-- <td>
+                    <a href="../assets/cv.pdf">Öppna</a>
+                  </td> -->
                 </tr>
               </tbody>
             </table>
