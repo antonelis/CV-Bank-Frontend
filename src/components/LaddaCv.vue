@@ -6,8 +6,16 @@
       <form>
         <div class="form-group mt-5">
           <label for="exampleFormControlFile1">Ladda upp Cv</label>
-          <input type="file" class="form-control-file mt-3" id="exampleFormControlFile1" />
-          <button type="submit" class="btn-color mt-5">Spara</button>
+          <input
+            class="form-control-file mt-3"
+            type="file"
+            id="file"
+            ref="file"
+            v-on:change="handleFileUpload()"
+          />
+          <button v-on:click="submitFile()" class="btn-color mt-5">
+            Ladda upp
+          </button>
         </div>
       </form>
     </div>
@@ -17,6 +25,35 @@
 <script>
 export default {
   name: "LaddaCv",
+
+  // data() {
+  //   return {
+  //     file: "",
+  //   };
+  // },
+
+  // methods: {
+  //   submitFile() {
+  //     let formData = new formData();
+  //     formData.append("file", this.file);
+
+  //     axios
+  //       .post("/uploadFile", formData, {
+  //         headers: {
+  //           "Content-Type": "multipart/form-data",
+  //         },
+  //       })
+  //       .then(function () {
+  //         console.log("SUCCESS");
+  //       })
+  //       .catch(function () {
+  //         console.log("FAIL");
+  //       });
+  //   },
+  //   handleFileUpload() {
+  //     this.file = this.$refs.file.files[0];
+  //   },
+  // },
 };
 </script>
 

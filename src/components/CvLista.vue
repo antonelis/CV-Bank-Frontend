@@ -7,8 +7,6 @@
         <div class="card-header" id="headingOne">
           <h2 class="mb-0">
             <button
-              v-for="student in students._embedded.studentList"
-              :key="student.id"
               class="btn btn-block text-left"
               type="button"
               data-toggle="collapse"
@@ -16,7 +14,7 @@
               aria-expanded="true"
               aria-controls="collapseOne"
             >
-              <h5>{{ student.education }}</h5>
+              <h5>Elever</h5>
             </button>
           </h2>
         </div>
@@ -43,7 +41,7 @@
                     {{ student.firstName }}
                   </td>
                   <td>
-                    <!-- <a href="#">Öppna</a> -->
+                    <a href="@/assets/cv.pdf">Öppna</a>
                   </td>
                 </tr>
               </tbody>
@@ -74,7 +72,7 @@ export default {
       fetch("http://localhost:8080/api/v1/students")
         .then((response) => response.json())
         .then((result) => {
-          console.log(result._embedded.studentList);
+          // console.log(result._embedded.studentList);
           this.students = result;
         });
     },
