@@ -99,7 +99,7 @@
       </div>
       <!-- APP -->
       <div class="card">
-        <div class="card-header" id="headingTwo">
+        <div class="card-header" id="headingThree">
           <h2 class="mb-0">
             <button
               class="btn btn-block text-left collapsed"
@@ -114,9 +114,9 @@
           </h2>
         </div>
         <div
-          id="collapseTwo"
+          id="collapseThree"
           class="collapse"
-          aria-labelledby="headingTwo"
+          aria-labelledby="headingThree"
           data-parent="#accordionExample"
         >
           <div class="card-body">
@@ -146,7 +146,7 @@
       </div>
       <!-- Mjukvarutestare -->
       <div class="card">
-        <div class="card-header" id="headingTwo">
+        <div class="card-header" id="headingFour">
           <h2 class="mb-0">
             <button
               class="btn btn-block text-left collapsed"
@@ -161,9 +161,9 @@
           </h2>
         </div>
         <div
-          id="collapseTwo"
+          id="collapseFour"
           class="collapse"
-          aria-labelledby="headingTwo"
+          aria-labelledby="headingFour"
           data-parent="#accordionExample"
         >
           <div class="card-body">
@@ -193,7 +193,7 @@
       </div>
       <!-- .Net -->
       <div class="card">
-        <div class="card-header" id="headingTwo">
+        <div class="card-header" id="headingFive">
           <h2 class="mb-0">
             <button
               class="btn btn-block text-left collapsed"
@@ -208,9 +208,9 @@
           </h2>
         </div>
         <div
-          id="collapseTwo"
+          id="collapseFive"
           class="collapse"
-          aria-labelledby="headingTwo"
+          aria-labelledby="headingFive"
           data-parent="#accordionExample"
         >
           <div class="card-body">
@@ -240,7 +240,7 @@
       </div>
       <!-- JavaScript -->
       <div class="card">
-        <div class="card-header" id="headingTwo">
+        <div class="card-header" id="headingSix">
           <h2 class="mb-0">
             <button
               class="btn btn-block text-left collapsed"
@@ -255,9 +255,9 @@
           </h2>
         </div>
         <div
-          id="collapseTwo"
+          id="collapseSix"
           class="collapse"
-          aria-labelledby="headingTwo"
+          aria-labelledby="headingSix"
           data-parent="#accordionExample"
         >
           <div class="card-body">
@@ -287,7 +287,7 @@
       </div>
       <!-- Frontend -->
       <div class="card">
-        <div class="card-header" id="headingTwo">
+        <div class="card-header" id="headingSeven">
           <h2 class="mb-0">
             <button
               class="btn btn-block text-left collapsed"
@@ -302,9 +302,9 @@
           </h2>
         </div>
         <div
-          id="collapseTwo"
+          id="collapseSeven"
           class="collapse"
-          aria-labelledby="headingTwo"
+          aria-labelledby="headingSeven"
           data-parent="#accordionExample"
         >
           <div class="card-body">
@@ -334,7 +334,7 @@
       </div>
       <!-- IT-projektledare -->
       <div class="card">
-        <div class="card-header" id="headingTwo">
+        <div class="card-header" id="headingEight">
           <h2 class="mb-0">
             <button
               class="btn btn-block text-left collapsed"
@@ -349,9 +349,9 @@
           </h2>
         </div>
         <div
-          id="collapseTwo"
+          id="collapseEight"
           class="collapse"
-          aria-labelledby="headingTwo"
+          aria-labelledby="headingEight"
           data-parent="#accordionExample"
         >
           <div class="card-body">
@@ -381,7 +381,7 @@
       </div>
       <!-- UX-design -->
       <div class="card">
-        <div class="card-header" id="headingTwo">
+        <div class="card-header" id="headingNine">
           <h2 class="mb-0">
             <button
               class="btn btn-block text-left collapsed"
@@ -396,9 +396,9 @@
           </h2>
         </div>
         <div
-          id="collapseTwo"
+          id="collapseNine"
           class="collapse"
-          aria-labelledby="headingTwo"
+          aria-labelledby="headingNine"
           data-parent="#accordionExample"
         >
           <div class="card-body">
