@@ -5,12 +5,26 @@
     </header>
 
     <div class="container mt-5">
-      <h3>Tillfällig navbar(Kommer tas bort när allt är kopplat till databasen)</h3>
+      <h3>
+        Tillfällig navbar(Kommer tas bort när allt är kopplat till databasen)
+      </h3>
       <router-link class="pr-3" to="/">Start</router-link>
       <router-link class="pr-3" to="/cvlista">Cv-Lista</router-link>
       <router-link class="pr-3" to="/laddaupp">Ladda upp cv</router-link>
     </div>
+
     <router-view />
+
+    <!-- Början av kod för att visa olika components vid inlogg -->
+
+    <!-- <div v-if="user === iths">
+      <LaddaCv />
+    </div>
+
+    <div v-else>
+      <CvLista />
+    </div> -->
+
     <footer>
       <img class="ml-5 py-3" src="@/assets/logo.svg" alt />
       <div class="footer-social">
@@ -20,7 +34,10 @@
         <a href="#" target="_blank">
           <i class="fab fa-linkedin"></i>
         </a>
-        <a href="https://www.youtube.com/channel/UCMG9JpaFbZQQVsvBoXKttmQ" target="_blank">
+        <a
+          href="https://www.youtube.com/channel/UCMG9JpaFbZQQVsvBoXKttmQ"
+          target="_blank"
+        >
           <i class="fab fa-youtube"></i>
         </a>
       </div>
@@ -30,11 +47,15 @@
 
 <script>
 import Header from "./components/Header.vue";
+import LaddaCv from "./components/LaddaCv.vue";
+import CvLista from "./components/CvLista.vue";
 
 export default {
   name: "App",
   components: {
     Header,
+    LaddaCv,
+    CvLista,
   },
 };
 </script>
