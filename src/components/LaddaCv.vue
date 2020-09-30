@@ -3,45 +3,18 @@
     <div class="form-container mx-auto">
       <h1>Ladda upp Cv</h1>
       <h6>Här kan du ladda upp ditt Cv till ITHS Cv-databas.</h6>
-      <!-- <form id="singleUploadForm" name="singleUploadForm">
+      <form>
         <div class="form-group mt-5">
           <label for="exampleFormControlFile1">Ladda upp Cv</label>
           <input
-            name="file"
-            class="form-control-file mt-3 file-input"
+            class="form-control-file mt-3"
             type="file"
+            id="file"
             ref="file"
-            id="singleFileUploadInput"
-            required
           />
-          <button class="btn-color mt-5 primary submit-btn">Ladda upp</button>
+          <button class="btn-color mt-5">Ladda upp</button>
         </div>
-      </form> -->
-
-      <!-- <div class="upload-response">
-        <div id="singleFileUploadError"></div>
-        <div id="singleFileUploadSuccess"></div>
-      </div> -->
-
-      <div class="upload-content">
-        <div class="single-upload">
-          <h3>Upload Single File</h3>
-          <form id="singleUploadForm" name="singleUploadForm">
-            <input
-              id="singleFileUploadInput"
-              type="file"
-              name="file"
-              class="file-input"
-              required
-            />
-            <button type="submit" class="primary submit-btn">Submit</button>
-          </form>
-          <div class="upload-response">
-            <div id="singleFileUploadError"></div>
-            <div id="singleFileUploadSuccess"></div>
-          </div>
-        </div>
-      </div>
+      </form>
     </div>
   </div>
 </template>
