@@ -3,21 +3,24 @@
     <div class="form-container mx-auto">
       <h1>Ladda upp Cv</h1>
       <h6>Här kan du ladda upp ditt Cv till ITHS Cv-databas.</h6>
-      <form>
+      <form id="singleUploadForm" name="singleUploadForm">
         <div class="form-group mt-5">
           <label for="exampleFormControlFile1">Ladda upp Cv</label>
           <input
-            class="form-control-file mt-3"
+            name="file"
+            class="form-control-file mt-3 file-input"
             type="file"
-            id="file"
             ref="file"
-            v-on:change="handleFileUpload()"
+            id="singleFileUploadInput"
+            required
           />
-          <button v-on:click="submitFile()" class="btn-color mt-5">
-            Ladda upp
-          </button>
+          <button class="btn-color mt-5 primary submit-btn">Ladda upp</button>
         </div>
       </form>
+      <div class="upload-response">
+        <div id="singleFileUploadError"></div>
+        <div id="singleFileUploadSuccess"></div>
+      </div>
     </div>
   </div>
 </template>
@@ -25,35 +28,6 @@
 <script>
 export default {
   name: "LaddaCv",
-
-  // data() {
-  //   return {
-  //     file: "",
-  //   };
-  // },
-
-  // methods: {
-  //   submitFile() {
-  //     let formData = new formData();
-  //     formData.append("file", this.file);
-
-  //     axios
-  //       .post("/uploadFile", formData, {
-  //         headers: {
-  //           "Content-Type": "multipart/form-data",
-  //         },
-  //       })
-  //       .then(function () {
-  //         console.log("SUCCESS");
-  //       })
-  //       .catch(function () {
-  //         console.log("FAIL");
-  //       });
-  //   },
-  //   handleFileUpload() {
-  //     this.file = this.$refs.file.files[0];
-  //   },
-  // },
 };
 </script>
 
