@@ -7,7 +7,7 @@ import LaddaCv from '@/components/LaddaCv.vue'
 import axios from 'axios'
 
 Vue.use(VueRouter)
-Vue.use(Axios)
+Vue.use(axios)
 
 const routes = [{
   path: '/',

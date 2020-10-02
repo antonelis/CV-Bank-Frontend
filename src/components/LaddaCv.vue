@@ -39,7 +39,7 @@ export default {
     onUpload() {
       // upload file, get it from this.selectedFile
       const formData = new FormData();
-      formData.append("myFile", this.selectedFile, this.selectedFile.name);
+      formData.append("file", this.selectedFile, this.selectedFile.name);
       axios.post("http://localhost:8080/uploadFile", formData).then((res) => {
         console.log(res);
       });
