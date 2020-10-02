@@ -4,8 +4,10 @@ import VueRouter from 'vue-router'
 import Login from '@/components/Login.vue'
 import CvLista from '@/components/CvLista.vue'
 import LaddaCv from '@/components/LaddaCv.vue'
+import axios from 'axios'
 
 Vue.use(VueRouter)
+Vue.use(Axios)
 
 const routes = [{
   path: '/',

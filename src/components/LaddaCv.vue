@@ -1,6 +1,6 @@
 <template>
   <div class="container mx-auto">
-    <!-- <div class="form-container mx-auto">
+    <div class="form-container mx-auto">
       <h1>Ladda upp Cv</h1>
       <h6>Här kan du ladda upp ditt Cv till ITHS Cv-databas.</h6>
       <form>
@@ -9,21 +9,21 @@
           <input
             class="form-control-file mt-3"
             type="file"
-            id="file"
-            ref="file"
+            @change="onFileChanged"
           />
-          <button class="btn-color mt-5">Ladda upp</button>
+          <button class="btn-color mt-5" @click="onUpload">Ladda upp</button>
         </div>
       </form>
-    </div> -->
+    </div>
 
     <!-- TEST -->
-    <input type="file" @change="onFileChanged" />
-    <button @click="onUpload">Upload!</button>
+    <!-- <input type="file" @change="onFileChanged" />
+    <button @click="onUpload">Upload!</button> -->
   </div>
 </template>
 
 <script>
+import axios from "axios";
 export default {
   name: "LaddaCv",
 
