@@ -39,10 +39,10 @@
                   :key="student.id"
                 >
                   <td v-if="student.education === 'Java'">
-                    {{ student.firstName }} {{student.lastName }}
+                    {{ student.firstName }} {{ student.lastName }}
                   </td>
-                   <td v-if="student.education === 'Java'">
-                    <a href="../assets/cv.pdf">Öppna</a>
+                  <td v-if="student.education === 'Java'">
+                    <a href="{{file.fileName}}">Öppna</a>
                   </td>
                 </tr>
               </tbody>
@@ -86,7 +86,7 @@
                   :key="student.id"
                 >
                   <td v-if="student.education === 'Web'">
-                    {{ student.firstName }} {{student.lastName }}
+                    {{ student.firstName }} {{ student.lastName }}
                   </td>
                   <!-- <td>
                     <a href="../assets/cv.pdf">Öppna</a>
@@ -133,7 +133,7 @@
                   :key="student.id"
                 >
                   <td v-if="student.education === 'App'">
-                    {{ student.firstName }} {{student.lastName }}
+                    {{ student.firstName }} {{ student.lastName }}
                   </td>
                   <!-- <td>
                     <a href="../assets/cv.pdf">Öppna</a>
@@ -180,7 +180,7 @@
                   :key="student.id"
                 >
                   <td v-if="student.education === 'Mjukvarutestare'">
-                    {{ student.firstName }} {{student.lastName }}
+                    {{ student.firstName }} {{ student.lastName }}
                   </td>
                   <!-- <td>
                     <a href="../assets/cv.pdf">Öppna</a>
@@ -227,7 +227,7 @@
                   :key="student.id"
                 >
                   <td v-if="student.education === '.Net'">
-                    {{ student.firstName }} {{student.lastName }}
+                    {{ student.firstName }} {{ student.lastName }}
                   </td>
                   <!-- <td>
                     <a href="../assets/cv.pdf">Öppna</a>
@@ -274,7 +274,7 @@
                   :key="student.id"
                 >
                   <td v-if="student.education === 'JavaScript'">
-                    {{ student.firstName }} {{student.lastName }}
+                    {{ student.firstName }} {{ student.lastName }}
                   </td>
                   <!-- <td>
                     <a href="../assets/cv.pdf">Öppna</a>
@@ -321,7 +321,7 @@
                   :key="student.id"
                 >
                   <td v-if="student.education === 'Frontend'">
-                    {{ student.firstName }} {{student.lastName }}
+                    {{ student.firstName }} {{ student.lastName }}
                   </td>
                   <!-- <td>
                     <a href="../assets/cv.pdf">Öppna</a>
@@ -368,7 +368,7 @@
                   :key="student.id"
                 >
                   <td v-if="student.education === 'It-projekt'">
-                    {{ student.firstName }} {{student.lastName }}
+                    {{ student.firstName }} {{ student.lastName }}
                   </td>
                   <!-- <td>
                     <a href="../assets/cv.pdf">Öppna</a>
@@ -415,7 +415,7 @@
                   :key="student.id"
                 >
                   <td v-if="student.education === 'Ux'">
-                    {{ student.firstName }} {{student.lastName }}
+                    {{ student.firstName }} {{ student.lastName }}
                   </td>
                   <!-- <td>
                     <a href="../assets/cv.pdf">Öppna</a>
@@ -437,6 +437,7 @@ export default {
   data() {
     return {
       students: [],
+      file: [],
     };
   },
 
@@ -452,7 +453,23 @@ export default {
           // console.log(result._embedded.studentList);
           this.students = result;
         });
+      fetch(
+        "http://localhost:8080/downloadFile/0171d1bc-9d5b-4e41-a164-ebab7935d05d"
+      )
+        .then((response) => response.json())
+        .then((result) => {
+          // console.log(result._embedded.studentList);
+          this.file = result;
+        });
     },
+    // fetchData() {
+    //   fetch("http://localhost:8080/downloadFile/0171d1bc-9d5b-4e41-a164-ebab7935d05d")
+    //     .then((response) => response.json())
+    //     .then((result) => {
+    //       // console.log(result._embedded.studentList);
+    //       this.file = result;
+    //     });
+    // },
   },
 };
 </script>
