@@ -42,7 +42,7 @@
                     {{ student.firstName }} {{ student.lastName }}
                   </td>
                   <td v-if="student.education === 'Java'">
-                    <a href="{{file.fileName}}">Öppna</a>
+                    <a href="http://localhost:8080/downloadFile/30495fdc-f208-40d1-8020-badc9aa0700d">Öppna</a>
                   </td>
                 </tr>
               </tbody>
