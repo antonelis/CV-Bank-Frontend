@@ -47,15 +47,11 @@
 
 <script>
 import Header from "./components/Header.vue";
-import LaddaCv from "./components/LaddaCv.vue";
-import CvLista from "./components/CvLista.vue";
 
 export default {
   name: "App",
   components: {
     Header,
-    LaddaCv,
-    CvLista,
   },
 };
 </script>
