@@ -15,6 +15,7 @@
               aria-expanded="true"
               aria-controls="collapseOne"
             >
+              <span class="round-java">jU</span>
               <h5>Java</h5>
             </button>
           </h2>
@@ -42,7 +43,10 @@
                     {{ student.firstName }} {{ student.lastName }}
                   </td>
                   <td v-if="student.education === 'Java'">
-                    <a href="http://localhost:8080/downloadFile/30495fdc-f208-40d1-8020-badc9aa0700d">Öppna</a>
+                    <a
+                      href="http://localhost:8080/downloadFile/30495fdc-f208-40d1-8020-badc9aa0700d"
+                      >Öppna</a
+                    >
                   </td>
                 </tr>
               </tbody>
@@ -62,6 +66,7 @@
               aria-expanded="false"
               aria-controls="collapseTwo"
             >
+              <span class="round-webb">wU</span>
               <h5>Webbutvecklare</h5>
             </button>
           </h2>
@@ -109,6 +114,7 @@
               aria-expanded="false"
               aria-controls="collapseThree"
             >
+              <span class="round-au">aU</span>
               <h5>Applikationsutvecklare</h5>
             </button>
           </h2>
@@ -156,6 +162,7 @@
               aria-expanded="false"
               aria-controls="collapseFour"
             >
+              <span class="round-mvt">mT</span>
               <h5>Mjukvarutestare</h5>
             </button>
           </h2>
@@ -203,6 +210,7 @@
               aria-expanded="false"
               aria-controls="collapseFive"
             >
+              <span class="round-net">.N</span>
               <h5>.Net-utvecklare</h5>
             </button>
           </h2>
@@ -250,6 +258,7 @@
               aria-expanded="false"
               aria-controls="collapseSix"
             >
+              <span class="round-js">jsU</span>
               <h5>JavaScript-utvecklare</h5>
             </button>
           </h2>
@@ -297,6 +306,7 @@
               aria-expanded="false"
               aria-controls="collapseSeven"
             >
+              <span class="round-feu">feU</span>
               <h5>Frontendutvecklare</h5>
             </button>
           </h2>
@@ -344,6 +354,7 @@
               aria-expanded="false"
               aria-controls="collapseEight"
             >
+              <span class="round-itp">itP</span>
               <h5>IT-projektledare</h5>
             </button>
           </h2>
@@ -391,6 +402,7 @@
               aria-expanded="false"
               aria-controls="collapseNine"
             >
+              <span class="round-ux">uX</span>
               <h5>UX-designer</h5>
             </button>
           </h2>
@@ -462,19 +474,82 @@ export default {
           this.file = result;
         });
     },
-    // fetchData() {
-    //   fetch("http://localhost:8080/downloadFile/0171d1bc-9d5b-4e41-a164-ebab7935d05d")
-    //     .then((response) => response.json())
-    //     .then((result) => {
-    //       // console.log(result._embedded.studentList);
-    //       this.file = result;
-    //     });
-    // },
   },
 };
 </script>
 
 <style scoped>
+.round-java {
+  background: orange;
+  border-radius: 50%;
+  color: white;
+  padding: 0.7em;
+  margin-right: 0.5em;
+}
+
+.round-webb {
+  background: rgb(90, 194, 90);
+  border-radius: 50%;
+  color: white;
+  padding: 0.7em;
+  margin-right: 0.5em;
+}
+
+.round-net {
+  background: rgb(50, 81, 221);
+  border-radius: 50%;
+  color: white;
+  padding: 0.7em;
+  margin-right: 0.5em;
+}
+
+.round-js {
+  background: rgb(243, 243, 58);
+  border-radius: 50%;
+  color: white;
+  padding: 0.7em;
+  margin-right: 0.5em;
+}
+
+.round-itp {
+  background: rgb(41, 55, 177);
+  border-radius: 50%;
+  color: white;
+  padding: 0.7em;
+  margin-right: 0.5em;
+}
+
+.round-feu {
+  background: rgb(129, 34, 101);
+  border-radius: 50%;
+  color: white;
+  padding: 0.7em;
+  margin-right: 0.5em;
+}
+
+.round-mvt {
+  background: rgb(216, 111, 25);
+  border-radius: 50%;
+  color: white;
+  padding: 0.7em;
+  margin-right: 0.5em;
+}
+
+.round-au {
+  background: rgb(226, 64, 36);
+  border-radius: 50%;
+  color: white;
+  padding: 0.7em;
+  margin-right: 0.5em;
+}
+
+.round-ux {
+  background: rgb(19, 121, 36);
+  border-radius: 50%;
+  color: white;
+  padding: 0.7em;
+  margin-right: 0.5em;
+}
 @media (max-width: 580px) {
   .CVdataBasBox {
     padding: 0 15px;
