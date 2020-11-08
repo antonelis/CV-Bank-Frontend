@@ -1,6 +1,6 @@
 <template>
   <div class="container mt-5">
-    <h1 class="mb-3">Cv-databas</h1>
+    <h1 class="mb-3 text-center head">Cv-databas</h1>
     <!-- COLLAPS -->
     <div class="CVdataBasBox accordion" id="accordionExample">
       <!-- JAVA -->
@@ -15,8 +15,7 @@
               aria-expanded="true"
               aria-controls="collapseOne"
             >
-              <span class="round-java">jU</span>
-              <h5>Java</h5>
+              <h5><span class="round-java">jU</span>Java</h5>
             </button>
           </h2>
         </div>
@@ -66,8 +65,7 @@
               aria-expanded="false"
               aria-controls="collapseTwo"
             >
-              <span class="round-webb">wU</span>
-              <h5>Webbutvecklare</h5>
+              <h5><span class="round-webb">wU</span> Webbutvecklare</h5>
             </button>
           </h2>
         </div>
@@ -114,8 +112,7 @@
               aria-expanded="false"
               aria-controls="collapseThree"
             >
-              <span class="round-au">aU</span>
-              <h5>Applikationsutvecklare</h5>
+              <h5><span class="round-au">aU</span> Applikationsutvecklare</h5>
             </button>
           </h2>
         </div>
@@ -162,8 +159,7 @@
               aria-expanded="false"
               aria-controls="collapseFour"
             >
-              <span class="round-mvt">mT</span>
-              <h5>Mjukvarutestare</h5>
+              <h5><span class="round-mvt">mT</span> Mjukvarutestare</h5>
             </button>
           </h2>
         </div>
@@ -210,8 +206,7 @@
               aria-expanded="false"
               aria-controls="collapseFive"
             >
-              <span class="round-net">.N</span>
-              <h5>.Net-utvecklare</h5>
+              <h5><span class="round-net">.N</span> .Net-utvecklare</h5>
             </button>
           </h2>
         </div>
@@ -258,8 +253,7 @@
               aria-expanded="false"
               aria-controls="collapseSix"
             >
-              <span class="round-js">jsU</span>
-              <h5>JavaScript-utvecklare</h5>
+              <h5><span class="round-js">jsU</span> JavaScript-utvecklare</h5>
             </button>
           </h2>
         </div>
@@ -306,8 +300,7 @@
               aria-expanded="false"
               aria-controls="collapseSeven"
             >
-              <span class="round-feu">feU</span>
-              <h5>Frontendutvecklare</h5>
+              <h5><span class="round-feu">feU</span> Frontendutvecklare</h5>
             </button>
           </h2>
         </div>
@@ -354,8 +347,7 @@
               aria-expanded="false"
               aria-controls="collapseEight"
             >
-              <span class="round-itp">itP</span>
-              <h5>IT-projektledare</h5>
+              <h5><span class="round-itp">itP</span> IT-projektledare</h5>
             </button>
           </h2>
         </div>
@@ -402,8 +394,7 @@
               aria-expanded="false"
               aria-controls="collapseNine"
             >
-              <span class="round-ux">uX</span>
-              <h5>UX-designer</h5>
+              <h5><span class="round-ux">uX</span> UX-designer</h5>
             </button>
           </h2>
         </div>
@@ -479,6 +470,9 @@ export default {
 </script>
 
 <style scoped>
+.head {
+  color: #693250;
+}
 .round-java {
   background: orange;
   border-radius: 50%;
